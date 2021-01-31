@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"username": "chandler",
+		"password": "$2b$10$mHZ8v109Mkh/lbG7t7PNuOMf/gAhiGYIVkXJqJCFK2uJCRfSTdM66"
+	},
+	{
+		"id": 2,
+		"username": "monica",
+		"password": "$2b$10$mHZ8v109Mkh/lbG7t7PNuOMf/gAhiGYIVkXJqJCFK2uJCRfSTdM66"
+	},
+	{
+		"id": 3,
+		"username": "joey",
+		"password": "$2b$10$mHZ8v109Mkh/lbG7t7PNuOMf/gAhiGYIVkXJqJCFK2uJCRfSTdM66"
+	},
+	{
+		"id": 4,
+		"username": "ross",
+		"password": "$2b$10$mHZ8v109Mkh/lbG7t7PNuOMf/gAhiGYIVkXJqJCFK2uJCRfSTdM66"
+	},
+	{
+		"id": 5,
+		"username": "rachel",
+		"password": "$2b$10$mHZ8v109Mkh/lbG7t7PNuOMf/gAhiGYIVkXJqJCFK2uJCRfSTdM66"
+	},
+	{
+		"id": 6,
+		"username": "phoebe",
+		"password": "$2b$10$mHZ8v109Mkh/lbG7t7PNuOMf/gAhiGYIVkXJqJCFK2uJCRfSTdM66"
+	}
+]
