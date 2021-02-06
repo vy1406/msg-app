@@ -41,7 +41,8 @@
 		"web-vitals": "^0.2.4"
 	},
 	"scripts": {
-		"start": "PORT=3006 react-scripts start",
+		"start": "REACT_APP_ENV=production react-scripts start",
+		"start:dev": "REACT_APP_ENV=development react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
@@ -63,5 +64,9 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"engines": {
+		"npm": "5.7.1",
+		"node": "12.16.0"
 	}
 }

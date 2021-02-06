@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import createSagaMiddleware from 'redux-saga';
 import { render } from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';

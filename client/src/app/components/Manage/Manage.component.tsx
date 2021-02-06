@@ -47,7 +47,7 @@ const Manage: React.FunctionComponent<IManageProps> = ({
 }) => {
 	useEffect(() => {
 		getAllMessages();
-	}, []);
+	}, [getAllMessages]);
 
 	const classes = useStyles();
 	return (

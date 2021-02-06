@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 import { connect } from 'react-redux';
-import _ from 'lodash';
 import { saveMessage } from '../../actions';
 import { IMessage } from '../../schemas/index';
 import { makeStyles } from '@material-ui/core/styles';

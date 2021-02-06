@@ -1,11 +1,14 @@
 import { put, takeLatest, takeEvery, all } from 'redux-saga/effects';
 import { ToastType } from '../schemas';
 
+const BASE_URL =
+	process.env.REACT_APP_ENV === 'production'
+		? 'https://vy140688-msg-server.herokuapp.com'
+		: 'http://localhost:5000';
+
 function* fetchMessages() {
 	try {
-		const json = yield fetch('http://localhost:3000/api/messages').then(response =>
-			response.json()
-		);
+		const json = yield fetch(`${BASE_URL}/api/messages`).then(response => response.json());
 
 		yield put({ type: 'MESSAGES_RECEIVED', json: json });
 	} catch (e) {
@@ -15,7 +18,7 @@ function* fetchMessages() {
 
 function* deleteMessage(payload: any) {
 	try {
-		const json = yield fetch(`http://localhost:3000/api/message/${payload.payload}`, {
+		const json = yield fetch(`${BASE_URL}/api/message/${payload.payload}`, {
 			method: 'DELETE'
 		}).then(response => response.json());
 		yield put({ type: 'MESSAGE_DELETED', json: json });
@@ -27,7 +30,7 @@ function* deleteMessage(payload: any) {
 
 function* saveMessage(payload: any) {
 	try {
-		yield fetch('http://localhost:3000/api/message', {
+		yield fetch(`${BASE_URL}/api/message`, {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json',
